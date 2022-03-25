@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>Your Weather Forecast</h1>
+
+      <h2>Type a city below to check the weather</h2>
+
+      <div class="input">
+        <input type="text" name="search" />
+      </div>
+    </header>
+    <br /><br />
+    <div id="city"></div>
+
+    <div class="flex-container weatherBox">
+      <div class="flexBoxes today">
+        <h3>Today</h3>
+        <br />
+        <h4>Monday, February 8</h4>
+        <br />
+        <div class="flex-container">
+          <div id="todayImg" class="todayImg flexBoxes">
+            <img  src="./images/clear.png" />
+          </div>
+
+          <div id="todayTemp" class="todayTemp flexBoxes">
+            <div id="description">Clear</div>
+            <div id="HighLow">
+              <br />L: 35&deg; &nbsp;&nbsp;&nbsp;&nbsp; H:75&deg;
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flexBoxes forecast">
+        <div class="flex-container">
+          <div id="day1" class="flexBoxes">
+            <span></span>
+            <h5>80&deg;</h5>
+            <h6>40&deg;</h6>
+            <img src="./images/partlycloudy.png" />
+          </div>
+          <div id="day2" class="flexBoxes">
+            <span></span>
+            <h5>80&deg;</h5>
+            <h6>40&deg;</h6>
+            <img src="./images/partlycloudy.png" />
+          </div>
+          <div id="day3" class="flexBoxes">
+            <span></span>
+            <h5>80&deg;</h5>
+            <h6>40&deg;</h6>
+            <img src="./images/partlycloudy.png" />
+          </div>
+          <div id="day4" class="flexBoxes">
+            <span></span><br />
+            <h5>80&deg;</h5>
+            <h6>40&deg;</h6>
+            <img src="./images/partlycloudy.png" />
+          </div>
+          <div id="day5" class="flexBoxes">
+            <span></span>
+            <h5>80&deg;</h5>
+            <h6>40&deg;</h6>
+            <img src="./images/partlycloudy.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
