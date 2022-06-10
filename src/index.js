@@ -21,7 +21,7 @@ document.querySelector("input").addEventListener("keyup", (e) => {
 
 async function retrieveCoordinates(city) {
   let geoApiKey =
-    "http://api.openweathermap.org/geo/1.0/direct?q=" +
+    "https://api.openweathermap.org/geo/1.0/direct?q=" +
     city +
     "&limit=5&appid=a510ae9d79be3d3a8ea17325ebe47871";
   let response = await fetch(geoApiKey, { mode: "cors" });
