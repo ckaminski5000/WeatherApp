@@ -5,7 +5,6 @@ body {
     background-position: center center;
     background-size: cover;
     font-family: Mouser, sans-serif;
-    
     margin: 0px;
     position: fixed;
 }   
@@ -18,7 +17,6 @@ body {
 
 header {
     background-color: lightblue;
-    opacity: .75;
     margin: 0;
     display: block;
     color: rgb(23, 23, 114);
