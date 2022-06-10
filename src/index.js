@@ -196,16 +196,16 @@ function displayForecast(object){
 
 
     //update temps
-    document.querySelector('#day1 h5').innerHTML = day1temp;
-    document.querySelector('#day1 h6').innerHTML = day1low;
-    document.querySelector('#day2 h5').innerHTML = day2temp;
-    document.querySelector('#day2 h6').innerHTML = day2low;
-    document.querySelector('#day3 h5').innerHTML = day3temp;
-    document.querySelector('#day3 h6').innerHTML = day3low;
-    document.querySelector('#day4 h5').innerHTML = day4temp;
-    document.querySelector('#day4 h6').innerHTML = day4low;
-    document.querySelector('#day5 h5').innerHTML = day5temp;
-    document.querySelector('#day5 h6').innerHTML = day5low;
+    document.querySelector('#day1 h5').innerHTML = day1temp + '\xB0';
+    document.querySelector('#day1 h6').innerHTML = day1low + '\xB0';
+    document.querySelector('#day2 h5').innerHTML = day2temp + '\xB0';
+    document.querySelector('#day2 h6').innerHTML = day2low + '\xB0';
+    document.querySelector('#day3 h5').innerHTML = day3temp + '\xB0';
+    document.querySelector('#day3 h6').innerHTML = day3low + '\xB0';
+    document.querySelector('#day4 h5').innerHTML = day4temp + '\xB0';
+    document.querySelector('#day4 h6').innerHTML = day4low + '\xB0';
+    document.querySelector('#day5 h5').innerHTML = day5temp + '\xB0' ;
+    document.querySelector('#day5 h6').innerHTML = day5low + '\xB0';
 
     //add icons to object
     for(let i = 0; i < 5; i++){
