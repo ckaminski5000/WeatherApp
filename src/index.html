@@ -4,10 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./images/favicon.ico" rel="icon" type="image/x-icon" />
     <title>Weather App</title>
   </head>
   <body>
     <header>
+      <div>
       <h1>Your Weather Forecast</h1>
 
       <h2>Type a city below to check the weather</h2>
@@ -19,8 +21,9 @@
         <div class="flexBoxes"></div>
         
       </div>
+    </div>
     </header>
-    <br /><br />
+  
     <div id="city"></div>
 
     <div class="flex-container weatherBox">
@@ -43,7 +46,8 @@
         </div>
       </div>
       <div class="flexBoxes forecast">
-        <div class="flex-container">
+        
+        <div id="forecastBoxes">
           <div id="day1" class="flexBoxes">
             <span></span>
             <h5>80&deg;</h5>

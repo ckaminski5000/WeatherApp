@@ -7,7 +7,7 @@ import cloundysnow from './images/cloundysnow.png'
 import partlycloudy from './images/partlycloudy.png'
 import flurries from './images/flurries.png'
 
-
+const begUrl = process.env.NODE_ENV === 'development' ? 'http': 'https';
 
 let longitude;
 let latitude;
@@ -21,7 +21,7 @@ document.querySelector("input").addEventListener("keyup", (e) => {
 
 async function retrieveCoordinates(city) {
   let geoApiKey =
-    "https://api.openweathermap.org/geo/1.0/direct?q=" +
+    begUrl + "://api.openweathermap.org/geo/1.0/direct?q=" +
     city +
     "&limit=5&appid=a510ae9d79be3d3a8ea17325ebe47871";
   let response = await fetch(geoApiKey, { mode: "cors" });
@@ -40,8 +40,8 @@ async function retrieveCoordinates(city) {
 retrieveCoordinates('Los Angeles')
 
 async function retrieveWeather() {
-  let weatherApiKey1 = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=a510ae9d79be3d3a8ea17325ebe47871`;
-  let weatherApiKey2 = `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&appid=a510ae9d79be3d3a8ea17325ebe47871`;
+  let weatherApiKey1 = `${begUrl}://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=a510ae9d79be3d3a8ea17325ebe47871`;
+  let weatherApiKey2 = `${begUrl}://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&appid=a510ae9d79be3d3a8ea17325ebe47871`;
   let response = await fetch(weatherApiKey1, { mode: "cors" });
   response = await response.json();
   
