@@ -40,8 +40,8 @@ async function retrieveCoordinates(city) {
 retrieveCoordinates('Los Angeles')
 
 async function retrieveWeather() {
-  let weatherApiKey1 = `http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=a510ae9d79be3d3a8ea17325ebe47871`;
-  let weatherApiKey2 = `http://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&appid=a510ae9d79be3d3a8ea17325ebe47871`;
+  let weatherApiKey1 = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=a510ae9d79be3d3a8ea17325ebe47871`;
+  let weatherApiKey2 = `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&appid=a510ae9d79be3d3a8ea17325ebe47871`;
   let response = await fetch(weatherApiKey1, { mode: "cors" });
   response = await response.json();
   
