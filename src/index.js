@@ -19,6 +19,11 @@ document.querySelector("input").addEventListener("keyup", (e) => {
   }
 });
 
+document.getElementById("searchBtn"). addEventListener("click", (e) => {
+    let city = document.querySelector("input").value;
+    retrieveCoordinates(city);
+})
+
 async function retrieveCoordinates(city) {
   let geoApiKey =
     begUrl + "://api.openweathermap.org/geo/1.0/direct?q=" +
