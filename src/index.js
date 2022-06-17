@@ -31,7 +31,6 @@ async function retrieveCoordinates(city) {
     "&limit=5&appid=a510ae9d79be3d3a8ea17325ebe47871";
   let response = await fetch(geoApiKey, { mode: "cors" });
   response = await response.json();
-  console.log(response);
   longitude = response[0].lon;
   latitude = response[0].lat;
   city = response[0].name;
